@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <style>
+
+    img {
+      width:20%;
+    }
+
+  </style>
+</head>
+<body>
+  <p id="score">score=0</p>
+    <img id="eduardo" src="https://static01.nyt.com/images/2017/08/17/arts/17YOUNGBOY1/17YOUNGBOY1-superJumbo.jpg"
+</body>
+</html>
+<script>
+  var score= 0
+  document.getElementById("eduardo").addEventListener("click",clickHandler)
+
+
+  function clickHandler(){
+
+    score=score+1
+    document.getElementById("score").innerText ="score= "+ score
+  }
+
+  </script>
